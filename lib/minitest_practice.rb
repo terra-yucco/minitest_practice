@@ -43,5 +43,10 @@ module MinitestPractice
       end
       return result
     end
+
+    # 6-7
+    def print_greeting
+      print 'Hello'
+    end
   end
 end

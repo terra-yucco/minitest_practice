@@ -85,25 +85,24 @@ class MinitestPracticeTest < Minitest::Test
   # [x] n is 3 and 5 common multiple, return 'FizzBuzz'
   # [x] else: return ''
   def test_for_fizz_buzz
-    assert_equal $target.fizz_buzz(-1), ''
-    assert_equal $target.fizz_buzz(0), 'FizzBuzz'
-    assert_equal $target.fizz_buzz(1), ''
+    assert_equal @target.fizz_buzz(-1), ''
+    assert_equal @target.fizz_buzz(0), 'FizzBuzz'
+    assert_equal @target.fizz_buzz(1), ''
 
-    assert_equal $target.fizz_buzz(2), ''
-    assert_equal $target.fizz_buzz(3), 'Fizz'
-    assert_equal $target.fizz_buzz(4), ''
-    assert_equal $target.fizz_buzz(5), 'Buzz'
-    assert_equal $target.fizz_buzz(6), 'Fizz'
-    assert_equal $target.fizz_buzz(7), ''
-    assert_equal $target.fizz_buzz(8), ''
-    assert_equal $target.fizz_buzz(9), 'Fizz'
-    assert_equal $target.fizz_buzz(10), 'Buzz'
-    assert_equal $target.fizz_buzz(11), ''
+    assert_equal @target.fizz_buzz(2), ''
+    assert_equal @target.fizz_buzz(3), 'Fizz'
+    assert_equal @target.fizz_buzz(4), ''
+    assert_equal @target.fizz_buzz(5), 'Buzz'
+    assert_equal @target.fizz_buzz(6), 'Fizz'
+    assert_equal @target.fizz_buzz(7), ''
+    assert_equal @target.fizz_buzz(8), ''
+    assert_equal @target.fizz_buzz(9), 'Fizz'
+    assert_equal @target.fizz_buzz(10), 'Buzz'
+    assert_equal @target.fizz_buzz(11), ''
 
-    assert_equal $target.fizz_buzz(14), ''
-    assert_equal $target.fizz_buzz(15), 'FizzBuzz'
-    assert_equal $target.fizz_buzz(16), ''
-
+    assert_equal @target.fizz_buzz(14), ''
+    assert_equal @target.fizz_buzz(15), 'FizzBuzz'
+    assert_equal @target.fizz_buzz(16), ''
   end
 
 end

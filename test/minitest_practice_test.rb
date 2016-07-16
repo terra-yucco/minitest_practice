@@ -9,12 +9,18 @@ class MinitestPracticeTest < Minitest::Test
     refute_nil ::MinitestPractice::VERSION
   end
 
+  #-------------------
+  # 6-2
+  #-------------------
   def test_for_odd?
     assert_equal @target.odd?(0), false
     assert_equal @target.odd?(1), true
     assert_equal @target.odd?(2), false
   end
 
+  #-------------------
+  # 6-3
+  #-------------------
   # 4 digits, even number
   # [x] 3 byte - false
   # [x] 4 byte - continue
@@ -34,4 +40,17 @@ class MinitestPracticeTest < Minitest::Test
     assert_equal @target.check_number?('1233'), false
     assert_equal @target.check_number?('1234'), true
   end
+
+  #-------------------
+  # 6-4
+  #-------------------
+  # 3-8byte length string - true
+  # [ ] nil - false
+  # [ ] 0byte - false
+  # [ ] 2byte - false
+  # [ ] 3byte - true
+  # [ ] 4byte - true
+  # [ ] 7byte - true
+  # [ ] 8byte - true
+  # [ ] 9byte - false
 end

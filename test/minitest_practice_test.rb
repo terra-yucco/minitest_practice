@@ -14,4 +14,18 @@ class MinitestPracticeTest < Minitest::Test
     assert_equal @target.odd?(1), true
     assert_equal @target.odd?(2), false
   end
+
+  # 4 digits, even number
+  # [x] 3 byte - false
+  # [ ] 4 byte - continue
+  # [x] 5 byte - false
+  # [ ] not numeric character - false
+  # [ ] initial 0 - false
+  # [ ] even - true
+  # [ ] odd - false
+  def test_for check_number?
+    
+    assert_equal @target.check_number?('123'), false
+    assert_equal @target.check_number?('12345'), false
+  end
 end

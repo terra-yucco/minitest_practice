@@ -23,5 +23,13 @@ module MinitestPractice
     def enough_length?(val)
       return (3 <= val.to_s.length && val.to_s.length <= 8)
     end
+
+    # 6-5
+    def divide?(dividend, divisor)
+      if divisor == 0
+        return false
+      end
+      return (dividend / divisor).to_f
+    end
   end
 end

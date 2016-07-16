@@ -31,5 +31,17 @@ module MinitestPractice
       end
       return (dividend / divisor).to_f
     end
+
+    # 6-6
+    def fizz_buzz(val)
+      result = ''
+      if (val % 3 == 0)
+        result += 'Fizz'
+      end
+      if (val % 5 == 0)
+        result += 'Buzz'
+      end
+      return result
+    end
   end
 end

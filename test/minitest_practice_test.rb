@@ -45,12 +45,22 @@ class MinitestPracticeTest < Minitest::Test
   # 6-4
   #-------------------
   # 3-8byte length string - true
-  # [ ] nil - false
-  # [ ] 0byte - false
-  # [ ] 2byte - false
-  # [ ] 3byte - true
-  # [ ] 4byte - true
-  # [ ] 7byte - true
-  # [ ] 8byte - true
-  # [ ] 9byte - false
+  # [x] nil - false
+  # [x] 0byte - false
+  # [x] 2byte - false
+  # [x] 3byte - true
+  # [x] 4byte - true
+  # [x] 7byte - true
+  # [x] 8byte - true
+  # [x] 9byte - false
+  def test_for_enough_length?
+    assert_equal @target.enough_length?(nil), false
+    assert_equal @target.enough_length?(''), false
+    assert_equal @target.enough_length?('ab'), false
+    assert_equal @target.enough_length?('abc'), true
+    assert_equal @target.enough_length?('abcd'), true
+    assert_equal @target.enough_length?('1234abc'), true
+    assert_equal @target.enough_length?('1234abcd'), true
+    assert_equal @target.enough_length?('1234abcde'), false
+  end
 end

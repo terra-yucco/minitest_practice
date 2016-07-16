@@ -19,7 +19,7 @@ class MinitestPracticeTest < Minitest::Test
   # [x] 3 byte - false
   # [ ] 4 byte - continue
   # [x] 5 byte - false
-  # [ ] not numeric character - false
+  # [x] not numeric character - false
   # [ ] initial 0 - false
   # [ ] even - true
   # [ ] odd - false
@@ -27,5 +27,8 @@ class MinitestPracticeTest < Minitest::Test
     
     assert_equal @target.check_number?('123'), false
     assert_equal @target.check_number?('12345'), false
+
+    assert_equal @target.check_number?('123a'), false
+
   end
 end

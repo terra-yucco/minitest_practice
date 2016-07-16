@@ -1,5 +1,9 @@
 require "minitest_practice/version"
 
 module MinitestPractice
-  # Your code goes here...
+  class Sample
+    def odd?(val)
+      return (val % 2 == 1)
+    end
+  end
 end

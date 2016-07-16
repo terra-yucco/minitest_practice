@@ -2,7 +2,7 @@ require 'test_helper'
 
 class MinitestPracticeTest < Minitest::Test
   def setup
-    @target = MinitestPractice::Sample
+    @target = ::MinitestPractice::Sample.new
   end
 
   def test_that_it_has_a_version_number

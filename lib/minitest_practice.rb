@@ -25,7 +25,7 @@ module MinitestPractice
     end
 
     # 6-5
-    def divide?(dividend, divisor)
+    def divide(dividend, divisor)
       if divisor == 0
         return false
       end

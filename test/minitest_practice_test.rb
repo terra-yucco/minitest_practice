@@ -69,11 +69,11 @@ class MinitestPracticeTest < Minitest::Test
   #-------------------
   # [x] return value: devide calculation result (at this time, float)
   # [x] divide with 0 - exception (at this time, false)
-  def test_for_divide?
-    assert_equal @target.divide?(1, 2), (1 / 2).to_f
-    assert_equal @target.divide?(2, 2), (2 / 2).to_f
-    assert_equal @target.divide?(1, 0.5), (1 / 0.5).to_f
-    assert_equal @target.divide?(1, 0), false
+  def test_for_divide
+    assert_equal @target.divide(1, 2), (1 / 2).to_f
+    assert_equal @target.divide(2, 2), (2 / 2).to_f
+    assert_equal @target.divide(1, 0.5), (1 / 0.5).to_f
+    assert_equal @target.divide(1, 0), false
   end
 
   #-------------------

@@ -63,4 +63,16 @@ class MinitestPracticeTest < Minitest::Test
     assert_equal @target.enough_length?('1234abcd'), true
     assert_equal @target.enough_length?('1234abcde'), false
   end
+
+  #-------------------
+  # 6-5
+  #-------------------
+  # [x] return value: devide calculation result (at this time, float)
+  # [x] divide with 0 - exception (at this time, false)
+  def test_for_devide?
+    assert_equal @target.divide?(1, 2), (1 / 2).to_f
+    assert_equal @target.divide?(2, 2), (2 / 2).to_f
+    assert_equal @target.divide?(1, 0.5), (1 / 0.5).to_f
+    assert_equal @target.divide?(1, 0), false
+  end
 end

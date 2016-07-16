@@ -105,4 +105,11 @@ class MinitestPracticeTest < Minitest::Test
     assert_equal @target.fizz_buzz(16), ''
   end
 
+  #-------------------
+  # 6-7
+  #-------------------
+  def test_for_print_greeting
+    assert_output('Hello') { @target.print_greeting }
+  end
+
 end

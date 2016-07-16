@@ -23,8 +23,7 @@ class MinitestPracticeTest < Minitest::Test
   # [x] initial 0 - false
   # [x] even - true
   # [x] odd - false
-  def test_for check_number?
-    
+  def test_for_check_number?
     assert_equal @target.check_number?('123'), false
     assert_equal @target.check_number?('12345'), false
 

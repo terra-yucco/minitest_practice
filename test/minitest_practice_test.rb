@@ -13,6 +13,7 @@ class MinitestPracticeTest < Minitest::Test
   # 6-2
   #-------------------
   def test_for_odd?
+    assert_equal @target.odd?(-1), true
     assert_equal @target.odd?(0), false
     assert_equal @target.odd?(1), true
     assert_equal @target.odd?(2), false

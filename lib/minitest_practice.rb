@@ -1,5 +1,6 @@
 require "minitest_practice/version"
 
+# commit test
 module MinitestPractice
   class Sample
 
